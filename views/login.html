@@ -1,0 +1,77 @@
+<!-- views/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/style3.css">
+  <style>
+    body {
+      background-image: url('/images/bgi1.jpg'); /* Use '/images/bgi2.jpg' to switch to bgi2 */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      margin: auto;
+      text-align: center;
+      margin-top: 100px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visibility */
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      text-align: left; /* Align label text to the left */
+    }
+
+    input {
+      width: calc(100% - 20px); /* Adjust width to include padding */
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+
+    button {
+      width: calc(100% - 20px); /* Adjust width to include padding */
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="login-form" action="/login" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>

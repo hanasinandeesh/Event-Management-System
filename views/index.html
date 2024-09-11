@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('/images/bgi1.jpg'); /* Use bgi2.jpg if preferred */
+      background-size: cover; /* Ensures the image covers the entire background */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+    }
+
+    header {
+      background-color: rgba(51, 51, 51, 0.8); /* Adds a semi-transparent overlay */
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav a {
+      color: #fff; /* Changes link color to white */
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: rgba(51, 51, 51, 0.8); /* Adds a semi-transparent overlay */
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Event Management System</h1>
+  </header>
+  <nav>
+    <a href="/create-event">Create Event</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/login">Login</a>
+  </nav>
+  <footer>
+    <p>&copy; 2024 Event Management System</p>
+  </footer>
+</body>
+</html>
