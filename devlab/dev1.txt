@@ -1,0 +1,49 @@
+program 1
+
+
+step 1:
+
+git init
+
+
+step 2: create file and commit changes 
+
+notepad test1.txt      / touch test1.txt / code .
+
+git add . 
+
+git commit -m "Added test1.txt"
+
+
+step 3 : create new branch and add new file 
+
+git branch new-branch
+
+git checkout new-branch
+
+git status
+
+notepad test2.txt / touch test2.txt
+
+git add .
+
+git commit -m "Added test2.txt in new-branch"
+
+
+step 5:  merge the branch 
+
+ git checkout master
+
+git branch
+
+ git status
+
+git merge new-branch
+
+step 6 : push to repository 
+
+git remote add origin https://github.com/hanasinandeesh/devolab1.git
+
+git push -u origin master
+
+
